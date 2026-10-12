@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TexTrack | Orders</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🧵 <span>TexTrack</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="orders.html" class="active">Orders</a>
+
+            <a href="stock.html">Stock</a>
+
+            <a href="production.html">Production</a>
+
+            <a href="tracking.html">Tracking</a>
+
+        </nav>
+
+        <a href="#" class="contact-btn">
+            Contact
+        </a>
+
+    </header>
+
+
+    <!-- Orders Header -->
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="small-title">
+                ORDER MANAGEMENT
+            </p>
+
+            <h1>
+                Customer Orders
+            </h1>
+
+            <p>
+                View and monitor all textile orders
+                from customers.
+            </p>
+
+        </div>
+
+        <button class="add-order-btn">
+            + New Order
+        </button>
+
+    </section>
+
+
+    <!-- Order Summary -->
+
+    <section class="order-summary">
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                📋
+            </div>
+
+            <div>
+                <h2>24</h2>
+                <p>Total Orders</p>
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                🟡
+            </div>
+
+            <div>
+                <h2>8</h2>
+                <p>In Production</p>
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                🟢
+            </div>
+
+            <div>
+                <h2>12</h2>
+                <p>Completed</p>
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                🚚
+            </div>
+
+            <div>
+                <h2>4</h2>
+                <p>Ready for Delivery</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Orders Table -->
+
+    <section class="orders-section">
+
+        <div class="table-container">
+
+            <div class="table-top">
+
+                <h2>
+                    Recent Orders
+                </h2>
+
+                <input
+                    type="text"
+                    placeholder="🔍 Search orders..."
+                >
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Order ID</th>
+
+                            <th>Customer</th>
+
+                            <th>Product</th>
+
+                            <th>Quantity</th>
+
+                            <th>Order Date</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>ORD001</strong>
+                            </td>
+
+                            <td>
+                                Sri Textiles
+                            </td>
+
+                            <td>
+                                Cotton Fabric
+                            </td>
+
+                            <td>
+                                500 m
+                            </td>
+
+                            <td>
+                                02 Oct 2026
+                            </td>
+
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>ORD002</strong>
+                            </td>
+
+                            <td>
+                                Kumar Mills
+                            </td>
+
+                            <td>
+                                Denim Fabric
+                            </td>
+
+                            <td>
+                                800 m
+                            </td>
+
+                            <td>
+                                01 Oct 2026
+                            </td>
+
+                            <td>
+                                <span class="status production">
+                                    In Production
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>ORD003</strong>
+                            </td>
+
+                            <td>
+                                ABC Garments
+                            </td>
+
+                            <td>
+                                Cotton Yarn
+                            </td>
+
+                            <td>
+                                300 kg
+                            </td>
+
+                            <td>
+                                30 Sep 2026
+                            </td>
+
+                            <td>
+                                <span class="status processing">
+                                    Processing
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>ORD004</strong>
+                            </td>
+
+                            <td>
+                                Tamil Fabrics
+                            </td>
+
+                            <td>
+                                Printed Fabric
+                            </td>
+
+                            <td>
+                                650 m
+                            </td>
+
+                            <td>
+                                29 Sep 2026
+                            </td>
+
+                            <td>
+                                <span class="status delivery">
+                                    Ready for Delivery
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>ORD005</strong>
+                            </td>
+
+                            <td>
+                                Green Cotton Ltd
+                            </td>
+
+                            <td>
+                                Organic Cotton
+                            </td>
+
+                            <td>
+                                450 kg
+                            </td>
+
+                            <td>
+                                28 Sep 2026
+                            </td>
+
+                            <td>
+                                <span class="status production">
+                                    In Production
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 TexTrack | Textile Mill Production & Order Tracking System
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

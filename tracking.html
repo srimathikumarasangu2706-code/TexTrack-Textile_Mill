@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking | Textile Mill</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        
+<header class="navbar">
+    <div class="logo">
+        🧵 <span>TexTrack</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="orders.html">Orders</a>
+        <a href="stock.html">Stock</a>
+        <a href="production.html">Production</a>
+        <a href="tracking.html" class="active">Tracking</a>
+    </nav>
+
+    <a href="contact.html" class="contact-btn">Contact</a>
+</header>
+
+    
+    <main class="container">
+        
+    <h2>Order Tracking</h2>
+    <p>Track your textile orders and monitor their delivery progress.</p>
+
+    <div class="tracking-banner">
+        <h3>Where is your order?</h3>
+        <p>Enter your Order ID below to check the latest status.</p>
+    </div>
+
+        <div class="tracking-card">
+            <label for="orderId">Enter Order ID:</label>
+
+            <input
+                type="text"
+                id="orderId"
+                placeholder="Example: TM101"
+            >
+
+            <button type="button" onclick="trackOrder()">
+                Track Order
+            </button>
+
+            <div id="trackingResult" aria-live="polite"></div>
+        </div>
+
+        <h3>Sample Orders</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+<tr>
+    <td>TM101</td>
+    <td>Cotton Fabric</td>
+    <td><span class="status in-progress">In Production</span></td>
+</tr>
+
+<tr>
+    <td>TM102</td>
+    <td>Dyed Fabric</td>
+    <td><span class="status pending">Ready for Dispatch</span></td>
+</tr>
+
+<tr>
+    <td>TM103</td>
+    <td>Cotton Yarn</td>
+    <td><span class="status completed">Delivered</span></td>
+</tr>
+  
+            </tbody>
+        </table>
+
+        <p><a href="index.html">← Back to Home</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Textile Mill Management System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

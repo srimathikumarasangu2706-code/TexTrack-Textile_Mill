@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | TexTrack</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🧵 TexTrack
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="orders.html">Orders</a>
+            <a href="stock.html">Stock</a>
+            <a href="production.html">Production</a>
+            <a href="tracking.html">Tracking</a>
+        </div>
+
+        <a href="contact.html" class="contact-btn">Contact</a>
+
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <div>
+            <h1>Contact Us</h1>
+            <p>Get in touch with the TexTrack management team</p>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Have questions about orders, production or delivery?
+                Send us a message and our team will get back to you.
+            </p>
+
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+
+                <div>
+                    <h3>Mill Location</h3>
+                    <p>Coimbatore, Tamil Nadu, India</p>
+                </div>
+            </div>
+
+
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+
+
+            <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+
+                <div>
+                    <h3>Email</h3>
+                    <p>support@textrack.com</p>
+                </div>
+            </div>
+
+
+            <div class="contact-item">
+                <div class="contact-icon">🕒</div>
+
+                <div>
+                    <h3>Working Hours</h3>
+                    <p>Monday – Saturday | 9:00 AM – 6:00 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+
+            <h2>Send Us a Message</h2>
+
+            <form onsubmit="submitContact(event)">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Enter subject"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Type your message..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <button type="submit" class="send-message-btn">
+                    Send Message
+                </button>
+
+                <p id="contactMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function submitContact(event) {
+
+            event.preventDefault();
+
+            document.getElementById("contactMessage").innerHTML =
+                "✓ Your message has been submitted successfully!";
+
+            document.getElementById("contactMessage").style.color =
+                "#159a9c";
+
+            document.querySelector("form").reset();
+        }
+
+    </script>
+
+</body>
+</html>

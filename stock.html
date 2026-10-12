@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TexTrack | Stock Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🧵 <span>TexTrack</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="orders.html">Orders</a>
+
+            <a href="stock.html" class="active">Stock</a>
+
+            <a href="production.html">Production</a>
+
+            <a href="tracking.html">Tracking</a>
+
+        </nav>
+
+        <a href="#" class="contact-btn">
+            Contact
+        </a>
+
+    </header>
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="small-title">
+                INVENTORY MANAGEMENT
+            </p>
+
+            <h1>
+                Yarn & Raw Material Stock
+            </h1>
+
+            <p>
+                Monitor the availability of yarn,
+                dyes and other production materials.
+            </p>
+
+        </div>
+
+        <button class="add-order-btn">
+            + Add Stock
+        </button>
+
+    </section>
+
+
+    <!-- Stock Summary -->
+
+    <section class="order-summary">
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                🧶
+            </div>
+
+            <div>
+
+                <h2>5.2K</h2>
+
+                <p>Total Yarn Stock</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                🟢
+            </div>
+
+            <div>
+
+                <h2>8</h2>
+
+                <p>Stock Available</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                🟡
+            </div>
+
+            <div>
+
+                <h2>3</h2>
+
+                <p>Low Stock Items</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="order-card">
+
+            <div class="order-icon">
+                🔴
+            </div>
+
+            <div>
+
+                <h2>1</h2>
+
+                <p>Critical Stock</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Stock Table -->
+
+    <section class="orders-section">
+
+        <div class="table-container">
+
+            <div class="table-top">
+
+                <h2>
+                    Current Stock
+                </h2>
+
+                <input
+                    type="text"
+                    placeholder="🔍 Search materials..."
+                >
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Material ID</th>
+
+                            <th>Material</th>
+
+                            <th>Category</th>
+
+                            <th>Quantity</th>
+
+                            <th>Unit</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>MAT001</strong>
+                            </td>
+
+                            <td>
+                                Cotton Yarn
+                            </td>
+
+                            <td>
+                                Yarn
+                            </td>
+
+                            <td>
+                                2500
+                            </td>
+
+                            <td>
+                                Kg
+                            </td>
+
+                            <td>
+
+                                <span class="status completed">
+                                    Available
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>MAT002</strong>
+                            </td>
+
+                            <td>
+                                Polyester Yarn
+                            </td>
+
+                            <td>
+                                Yarn
+                            </td>
+
+                            <td>
+                                1200
+                            </td>
+
+                            <td>
+                                Kg
+                            </td>
+
+                            <td>
+
+                                <span class="status completed">
+                                    Available
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>MAT003</strong>
+                            </td>
+
+                            <td>
+                                Dyed Yarn
+                            </td>
+
+                            <td>
+                                Yarn
+                            </td>
+
+                            <td>
+                                450
+                            </td>
+
+                            <td>
+                                Kg
+                            </td>
+
+                            <td>
+
+                                <span class="status production">
+                                    Low Stock
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>MAT004</strong>
+                            </td>
+
+                            <td>
+                                Blue Dye
+                            </td>
+
+                            <td>
+                                Dye
+                            </td>
+
+                            <td>
+                                180
+                            </td>
+
+                            <td>
+                                Kg
+                            </td>
+
+                            <td>
+
+                                <span class="status production">
+                                    Low Stock
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>MAT005</strong>
+                            </td>
+
+                            <td>
+                                Reactive Dye
+                            </td>
+
+                            <td>
+                                Dye
+                            </td>
+
+                            <td>
+                                40
+                            </td>
+
+                            <td>
+                                Kg
+                            </td>
+
+                            <td>
+
+                                <span class="status delivery">
+                                    Critical
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>MAT006</strong>
+                            </td>
+
+                            <td>
+                                Cotton Thread
+                            </td>
+
+                            <td>
+                                Thread
+                            </td>
+
+                            <td>
+                                850
+                            </td>
+
+                            <td>
+                                Kg
+                            </td>
+
+                            <td>
+
+                                <span class="status completed">
+                                    Available
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 TexTrack | Textile Mill Production & Order Tracking System
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
